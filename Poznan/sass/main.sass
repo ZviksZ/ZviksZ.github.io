@@ -1,0 +1,543 @@
+// @import 'responsive'
+
+$mainFont : 'League Gothic'
+$anthrFont : 'League Gothic Condensed'
+
+body, h2,h3, p 
+	margin: 0
+	pointer-events: auto 
+
+
+
+.container
+	position: relative
+	width: 94.11%
+	margin: 0 auto
+
+.clearfix:after
+	content: ""
+	clear: both
+	display: table	
+
+.text_cyan
+	color: #22aaec
+
+	
+/*-------Header--------*/
+
+.header-title
+	width: 100%
+	// height: 25px
+	text-align: center
+	font-size: 32px
+	font-weight: 400
+	text-transform: uppercase
+	color: #076e9f
+	line-height: 1
+	font-family: $mainFont
+	margin: 16px auto 17px
+	
+
+
+.header-social
+	position: absolute
+	top: 2px
+	right: 0
+	width: 16.37%
+	height: 16px
+	.header-social_link
+		display: inline-block
+		text-decoration: none
+		vertical-align: middle	
+		margin-left: 5.07%
+		float: left
+		.header-social_icon
+			height: 16px
+
+.header-nav
+	width: 100%
+	text-align: center
+	padding-left: 0
+	margin: 0 0 11px 0
+	.header-nav_item
+		display: inline-block
+		margin-right: 18px
+		font-size: 10px
+		font-weight: 400
+		line-height: 18px
+		text-transform: uppercase
+		&:last-child
+			margin-right: 0
+		&:hover
+			background-color: #076e9f
+			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%)
+			box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25)	
+			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.55)			
+		.header-nav_link
+			display: block
+			padding: 5px 16px
+			text-decoration: none
+			border: 1px solid rgba(255, 255, 255, 0)
+			color: #707070
+			&:hover
+				text-decoration: none
+				color: white
+				border: 1px solid #045279
+			
+/*------End-Header--------*/
+
+/*-------Main--------*/
+
+.main
+	position: relative
+	background-image: url("../img/main_bg.png") 
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	box-sizing: border-box
+	border-top: 2px solid #22aaec 
+	border-bottom: 2px solid #22aaec 
+
+.main-title
+	width: 27.84%
+	height: 79px 
+	margin: 91px auto 19px
+	opacity: 0.8
+	background-color: white
+	font-family: $mainFont
+	font-size: 60px
+	font-weight: 400
+	text-align: center
+	line-height: 84px
+	text-transform: uppercase
+	color: #076e9f
+	
+
+.main-info
+	width: 76.07%
+	height: 47px
+	margin: 0 auto 102px
+	opacity: 0.8
+	background-color: white
+	font-family: $mainFont
+	font-size: 30px
+	font-weight: 400
+	text-align: center
+	line-height: 50px
+	text-transform: uppercase
+	color: #076e9f
+
+.main-person
+	padding-left: 0
+	margin: 0
+	height: 122px
+
+.main-person_item
+	position: relative
+	display: inline-block
+	box-sizing: border-box
+	width: 15.09%
+	height: 69px
+	opacity: 0.9
+	background-color: white
+	border: 3px solid white	
+	float: left
+	margin: 25px 8.43% 25px 0
+	&:first-child
+		margin-left: 7.94%		
+	&:last-child
+		margin-right: 0
+	.main-person_img
+		position: absolute
+		top: -3px
+		left: -23.5%
+		width: 46.10%
+		height: 70px
+		max-width: 72px
+		z-index: 2
+	.main-person_quote		
+		width: 48.05%
+		height: 38px
+		color: #515151
+		font-size: 9px
+		font-weight: bold
+		font-style: italic
+		line-height: 14px
+		margin: 5px 0 7px 34.41%
+	.main-person_quote-first
+		width: 56%
+	.main-person_quote-last
+		width: 68%	
+	.main-person_name
+		color: #828282
+		font-size: 9px
+		font-weight: 400
+		margin-left: 34.41%
+
+/*------End-Main--------*/
+
+/*-------Content--------*/
+
+.content
+	position: relative
+	margin-bottom: 0
+	z-index: 1
+.content-header
+		color: #076e9f
+		font-family: $mainFont
+		font-size: 22px
+		font-weight: 400
+		padding-top: 18px
+		margin: 0 0 19px	
+
+.content-author
+	width: 20.31%
+	height: 168px
+	float: left
+	padding-left: 0.52%	
+	border-bottom: 1px dotted #d5d5d5
+	.content-author_info
+		width: 82.57%
+		font-size: 10px
+		line-height: 18px
+		color: #5c5c5c
+		font-weight: 400
+		.content-author_info-name
+			color: #076e9f
+			font-weight: 700
+
+.content-welcome
+	width: 78.54%
+	height: 197px
+	float: left
+	background-color: #fff
+	margin-top: -10px
+	box-sizing: border-box
+	border-top: 2px solid #22aaec
+	border-left: 1px dotted #d5d5d5
+	border-bottom: 1px dotted #d5d5d5
+	border-right: 1px dotted #d5d5d5
+	.content-welcome_header
+		color: #076e9f
+		font-family: $mainFont
+		font-size: 32px
+		font-weight: 400
+		margin: 30px 0 17px 1.72%	
+
+	.content-welcome_avatar
+		float: left
+		width: 52px
+		height: 50px
+		background: url("../img/avatar_bg.png") no-repeat
+		color: white		
+		font-size: 8px
+		font-weight: 700
+		text-align: center
+		padding-top: 17px
+		padding-left: 1px
+		margin: 0 1.46% 0 1.72%
+	.content-welcome_avatar-img
+		margin-left: 0
+		margin-right: 3.2%
+		background: url("../img/avatar.png") no-repeat
+	.content-welcome_info
+		float: left
+		width: 66.4%
+		height: 47px
+		color: #5c5c5c
+		font-size: 10px
+		font-weight: 400
+		line-height: 18px
+		margin-right: 9%
+		margin-bottom: 24px		
+	.content-welcome_btn
+		width: 9.57%
+		float: left
+		padding: 8px 0 7px 0
+		height: 26px
+		background-color: #076e9f
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.04) 0%, rgba(255, 255, 255, 0.04) 100%)
+		box-sizing: border-box 
+		text-align: center
+		border: 1px solid #045279
+		border-bottom: 3px solid #00141e
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25)
+		text-decoration: none
+		color: white
+		font-size: 10px
+		font-weight: 700
+		line-height: 8px
+		margin: 0 0 19px 20.21%
+		box-sizing: border-box 
+	.content-welcome_stat
+		width: 23.8%
+		height: 26px
+		background-color: #90d4f5	
+		float: right;
+		margin-right: -0.66%
+		.content-welcome_stat-up
+			display: block
+			float: left
+			margin: 5px 5.58% 0 7.26%  
+		.content-welcome_stat-info
+			float: left
+			height: 9px
+			color: #076e9f
+			font-size: 10px
+			font-weight: 700
+			margin: 9px 8.37% 0 0
+		.content-welcome_stat-info__last
+			margin-right: 0
+		.content-welcome_stat-speech
+			display: block
+			float: left	
+			margin: 6px 5% 0 0 
+		.content-welcome_stat-triangle
+			float: right
+			margin-top: 25px
+
+
+.content-posts
+	width: 20.31%
+	height: 219px
+	float: left
+	padding-left: 0.52%	
+	margin-top: -19px
+	border-bottom: 1px dotted #d5d5d5
+	.content-header
+		margin: 18px 0 16px 0;
+		padding-top: 0
+	.content-posts_item-last
+		margin-bottom: 27px		
+	.content-posts_item
+		width: 82.56%
+		height: 40px
+		margin-bottom: 11px	
+		.content-posts_img-big
+			float: left
+			margin-right: 9.23%
+		.content-posts_name	
+			width: 59.17%
+			height: 8px
+			color: #5c5c5c
+			font-size: 10px
+			font-weight: 700
+			float: left
+			margin: 6px 0 7px
+		.content-posts_img-small
+			float: left
+			margin-right: 2.56%	
+		.content-posts_comments
+			width: 36%
+			height: 8px
+			color: #5c5c5c
+			font-size: 10px
+			font-style: italic
+			float: left
+			margin-top: 2px
+			word-spacing: 2px
+
+.content-news
+	width: 78.54%
+	height: 376px
+	float: left
+	z-index: 1
+	margin-right: 5px
+	background-color: #fff
+	border-left: 1px dotted #d5d5d5
+	border-bottom: 1px dotted #d5d5d5			
+	.content-news_item
+		position: relative
+		width: 48.27%
+		height: 214px
+		box-sizing: border-box
+		float: left
+		background-color: #eaeaea
+		border-radius: 20px 0 0 0		
+		margin: 20px 1.74% 0 1.72%			
+		.content-news_item-wrap
+			padding-left: 8.26%	
+			margin-bottom: 22px			
+			.content-header
+				margin: 25px 0 6px 0
+				padding-top: 0
+				width: 64.67%
+				line-height: 21px
+			.content-news_author
+				height: 10px
+				font-size: 10px
+				font-weight: 400
+				color: #878787
+				margin-bottom: 31px	
+			.content-news_author-last
+				margin-bottom: 10px		
+			.content-news_link
+				color: #076e9f
+				text-decoration: none
+				font-size: 10px
+				font-weight: 400				
+			.content-news_text
+				width: 70.52%
+				height: 46px
+				color: #5c5c5c
+				font-size: 10px
+				font-weight: 400
+				line-height: 18px
+				margin-bottom: 5px	
+			.content-news_text-last
+				width: 84.67%	
+				height: 65px
+				color: #5c5c5c
+				font-size: 10px
+				font-weight: 400
+				line-height: 18px		
+		.content-news_stats
+			width: 100%
+			height: 30px
+			background-color: #f4f3f3
+			padding-left: 75.75%
+			box-sizing: border-box		
+			.content-news_stats-info
+				color: #076e9f
+				font-size: 10px
+				font-weight: 400
+				float: left
+				margin-right: 17%
+				margin-top: 11px
+				&:last-child
+					margin-right: 0
+			.content-news_stats-img
+				float: left	
+				margin-top: 7px
+				margin-right: 3%
+				&:last-child
+					margin-top: 8px
+	.content-news_item-last
+			margin-left: 0
+			margin-right: 0	
+			.content-news_item-wrap_last
+				margin-bottom: 3px	
+	.content-news_item:last-child
+		background-color: white	
+		width: 98.4%	
+		height: 80px	
+		margin-top: 29px
+		&:before,
+		&:after
+			display: none			
+	.content-news_add
+		position: relative
+		width: 100%
+		height: 80px
+		float: left
+		box-sizing: border-box
+		background-color: #f4f3f3
+		background-image: linear-gradient(to top, transparent 0%, transparent 100%)
+		.content-news_add-text
+			width: 9.18%
+			display: block
+			text-decoration: none
+			margin: 35px auto 0
+			text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75)
+			color: #636363
+			font-size: 12px
+			font-weight: 400
+
+
+
+.content-currency
+	float: left
+	padding-left: 0.52%
+	width: 20.31%
+	height: 176px
+	margin-top: -177px
+	border-bottom: 1px dotted #d5d5d5
+	.content-header
+		padding-top: 23px
+		margin-bottom: 12px
+	.content-currency_table
+		width: 87.63%
+		text-align: center
+		vertical-align: middle
+		.content-currency_table-h
+			width: 25%
+			height: 19px
+			background-color: #076e9f
+			color: white
+			font-size: 10px
+			font-weight: 400
+		.content-currency_table-d
+			width: 25%
+			height: 19px
+			background-color: rgba(144, 212, 245, 0.5)
+			color: #076e9f
+			font-size: 10px
+			font-weight: 400
+			line-height: 18px
+			padding: 0
+		.content-currency_table-img_up,
+		.content-currency_table-img_down	
+			display: inline-block
+			vertical-align: middle			
+		.content-currency_table-blue
+			background-color: rgba(144, 212, 245, 0.7)	
+
+
+/*------End-Content--------*/
+
+/*-------Map--------*/			
+
+.map
+	.map-title
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
+		color: #076e9f
+		font-family: $mainFont
+		font-size: 32px
+		font-weight: 400
+		margin: 18px 0 18px 3.62%
+
+
+/*------End-Map--------*/
+
+/*-------Footer--------*/	
+.footer-main
+	height: 44px
+	border-bottom: 1px dotted #d5d5d5
+	.footer-title		
+		width: 10%
+		height: 13px
+		font-family: $mainFont
+		font-size: 16px
+		font-weight: 400
+		text-transform: uppercase
+		color: #076e9f
+		margin-top: 10px
+		margin-left: 0.72%
+		float: left
+	.footer-nav
+		float: right
+		width: 27.08%
+		padding-left: 0
+		margin-top: 9px
+		.footer-nav_item
+			float: left
+			margin-right: 25px
+			list-style-type: none
+			.footer-nav_link
+				text-decoration: none
+				color: #707070
+				font-size: 10px
+				font-weight: 400
+				text-transform: uppercase
+			&:first-child
+				margin-right: 35px
+			&:last-child
+				margin-right: 0	
+.footer-copyright
+	width: 100%
+	height: 32px
+	text-align: center
+	line-height: 34px	
+	color: #787878
+	font-size: 10px
+	font-weight: 400
+	text-transform: uppercase			

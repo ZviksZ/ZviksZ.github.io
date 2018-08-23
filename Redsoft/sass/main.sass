@@ -1,0 +1,673 @@
+@import "reset"
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	font-weight: 400
+	overflow-x: hidden
+
+.container
+	max-width: 1160px
+	margin: auto
+	position: relative
+
+.clearfix:after
+	display: table
+	content: ""
+	clear: both		
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+/*--------Header------*/
+
+.header
+	position: relative
+	.header__logo
+		display: inline-block
+		margin: 26px 0 25px
+		outline: none
+	.header__nav
+		float: right
+		position: relative
+		&-list
+			margin-top: 28px
+		&-item
+			display: inline-block
+			margin-right: 64px
+			&:last-child
+				margin-right: 0
+		.active
+			border-top: 2px solid #0e7aff
+			padding-top: 24px		
+		&-link
+			display: block
+			color: #393939
+			font-size: 16px	
+			box-sizing: border-box
+			padding-top: 26px
+			text-decoration: none
+			line-height: 1
+			position: relative		
+			&:hover
+				border-top: 2px solid #0e7aff
+				padding-top: 24px
+			.fa
+				padding-left: 7px
+				font-size: 13px
+		&-sub
+			position: absolute
+			display: none
+			background: #fdfdfd
+			width: 200px
+			z-index: 3				
+		&-item:hover .header__nav-sub
+			display: block
+			padding-top: 10px
+			position: absolute
+		.header__nav-sub-item
+			margin-bottom: 5px
+			padding-left: 5px	
+			text-align: left
+		.header__nav-sub-link
+			font-size: 16px
+			text-decoration: none	
+			color: #393939						
+		.header__nav-sub-link:hover
+			border-bottom: 2px solid #0e7aff
+	.header__nav-btn
+		display: none
+		width: 50px
+		height: auto
+		position: absolute
+		right: 30px	 !important
+		top: 20px	
+		cursor: pointer
+		span
+			display: inline-block
+			width: 50px
+			height: 3px
+			background-color: black
+			margin-bottom: 5px
+			&:last-child
+			margin-bottom: 0			
+
+/*-------End-Header-----*/
+
+/*------Header-Img----*/
+
+.header-img
+	height: 980px	
+	background: url("../img/header_img.png") no-repeat
+	background-size: cover
+	background-position: 100%
+	position: relative
+	&__title
+		display: inline-block
+		max-width: 833px
+		height: 91px
+		color: white
+		font-size: 36px
+		font-weight: 700
+		line-height: 54px
+		margin-top: 176px	
+		margin-bottom: 106px
+		letter-spacing: 4px
+		text-transform: uppercase
+	&__btn
+		display: block
+		width: 160px
+		height: 50px
+		border: 2px solid white
+		border-radius: 25px		
+		color: #393939
+		font-size: 16px
+		line-height: 46px
+		text-align: center
+		text-decoration: none
+		position: relative
+		margin-bottom: 110px
+		&:after
+			content: ""
+			display: block
+			width: 48px
+			height: 2px
+			background-color: #0e7aff	
+			position: absolute
+			right: -24px
+			top: 23px	
+	&__trigger
+		.header-img__trigger-item
+			width: 160px
+			height: 160px
+			border: 2px solid #0e7aff
+			display: inline-block
+			position: relative
+			padding-left: 24px
+			margin-right: 40px
+			&:last-child
+				margin-right: 0
+			.header-img__trigger-img
+				display: inline-block
+				margin-top: 26px	
+				margin-bottom: 23px				
+			.header-img__trigger-wblock
+				width: 160px
+				height: 160px
+				border: 1px solid #e6e6e6
+				box-sizing: border-box
+				position: absolute
+				top: -10px
+				right: -10px
+			.header-img__trigger-numb
+				color: #393939
+				font-size: 18px
+				font-weight: 700
+				margin-bottom: 6px
+			.header-img__trigger-text
+				color: #393939
+				font-size: 18px
+				font-weight: 300
+	&__link
+		display: inline-block
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 840px
+		height: 100px
+		background-color: #393939
+		color: white
+		font-size: 24px
+		line-height: 100px
+		text-transform: uppercase
+		text-decoration: none
+		padding-left: 100px
+		letter-spacing: 2px
+		.header-img__link-arrow
+			padding-left: 62px
+
+/*-------End-Header-Img----*/
+
+/*------Client----*/
+
+.client
+	position: relative
+	height: 1340px
+	&__title
+		display: inline-block
+		color: #393939
+		font-size: 36px
+		font-weight: 400
+		margin-top: 114px
+		margin-bottom: 74px
+	&__img-left	
+		width: 43.75%
+		height: 560px	
+		position: absolute
+		top: 220px
+		left: 0
+	&__img-right
+		width: 43.75%
+		height: 560px	
+		position: absolute
+		right: 0
+		top: 780px	
+	&__info
+		width: 560px
+		float: right
+		position: relative
+		&-title
+			margin-top: 82px
+			display: inline-block
+			color: #393939
+			font-size: 24px
+			font-weight: 400
+			margin-bottom: 44px
+		&-list
+			.client__info-item
+				color: #666
+				font-size: 18px
+				font-weight: 400
+				margin-bottom: 34px
+				background: url("../img/list_marker.png") no-repeat
+				background-position: 0 50%
+				padding-left: 40px
+		&-logo
+			position: absolute	
+			left: 340px
+			top: 60px
+		&-btn
+			display: block
+			width: 160px
+			height: 48px
+			border: 2px solid #0e7aff
+			border-radius: 24px		
+			color: #0e7aff
+			font-size: 16px
+			line-height: 44px
+			text-align: center
+			text-decoration: none
+			position: relative
+			margin-top: 14px
+			&:after
+				content: ""
+				display: block
+				width: 48px
+				height: 2px
+				background-color: #0e7aff	
+				position: absolute
+				right: -24px
+				top: 22px		
+	&__info-left
+		margin-top: 560px
+		padding-left: 100px
+		position: relative
+		.client__info-logo-left
+			position: absolute
+			left: 0
+			top: 60px	
+
+/*-------End-Client----*/
+
+/*------Types----*/
+
+.types	
+	position: relative
+	&__title
+		display: inline-block
+		margin-top: 110px
+		margin-bottom: 80px
+		font-size: 36px
+		font-weight: 400
+		color: #393939
+		letter-spacing: 4px
+		&-blue
+			color: #0e7aff
+	&__flex
+		display: flex	
+		flex-wrap: wrap
+		margin-bottom: 200px	
+		.types__item
+			flex-basis: 33.33%
+			height: 440px
+			background-color: #eee			
+			.types__wrap
+				margin: 28px 0 0 30px
+				width: 89%
+				height: 380px
+				border: 2px solid #eee
+				padding-left: 68px
+				position: relative
+				.types__numb
+					display: block
+					color: #d0d0d0
+					font-size: 108px
+					font-weight: 400
+					position: absolute
+					right: 20px
+					top: 0
+				.types__title
+					letter-spacing: 0
+					color: #393939
+					font-size: 24px
+					font-weight: 400
+					margin-top: 108px
+					margin-bottom: 48px
+				.types__text
+					width: 97%
+					color: #666
+					font-size: 16px
+					font-weight: 400
+					line-height: 32px
+					margin-right: 0
+			&:hover
+				background: url("../img/types_bg.png") no-repeat
+				background-position: 100% 
+				background-size: 100% 100%
+				.types__wrap
+					border: 2px solid white
+				.types__numb,
+				.types__title,
+				.types__text	
+					color: white
+
+/*-------End-Types----*/
+
+/*------About----*/
+
+.about
+	background-color: #eee
+	height: 760px
+	position: relative
+	margin-bottom: 300px
+	&__img
+		position: absolute
+		width: 41.14%
+		height: 760px	
+		right: 0
+		top: -80px
+	&__link
+		display: inline-block
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 840px
+		height: 100px
+		background-color: #393939
+		color: white
+		font-size: 24px
+		line-height: 100px
+		text-transform: uppercase
+		text-decoration: none
+		padding-left: 380px
+		letter-spacing: 2px
+		.header-img__link-arrow
+			padding-left: 34px	
+	&__title
+		display: inline-block
+		margin-top: 75px
+		margin-bottom: 62px
+		color: #0e7aff
+		font-size: 36px
+		font-weight: 400
+	&__big
+		width: 691px
+		height: 216px
+		color: #393939
+		font-size: 24px
+		line-height: 48px
+		margin-bottom: 64px
+	&__small
+		width: 689px
+		height: 145px
+		color: #666
+		font-size: 16px
+		font-weight: 400
+		line-height: 32px
+	&__img-btm
+		position: absolute
+		top: 660px
+		right: 0
+		width: 48.27%
+		height: 400px
+
+/*-------End-About----*/
+
+/*------News----*/
+
+.news
+	&__title
+		color: #393939
+		font-size: 36px
+		font-weight: 400
+		letter-spacing: 4px
+		display: inline-block
+		margin-top: 114px
+	&__all
+		display: block
+		float: right
+		width: 200px
+		height: 48px
+		border: 2px solid #0e7aff
+		border-radius: 24px		
+		color: #0e7aff
+		font-size: 16px
+		line-height: 44px
+		text-align: center
+		text-decoration: none
+		position: relative
+		margin-top: 104px
+		&:after
+			content: ""
+			display: block
+			width: 48px
+			height: 2px
+			background-color: #0e7aff	
+			position: absolute
+			right: -24px
+			top: 22px	
+	&__list
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+		width: 100%
+		margin-top: 67px
+		margin-bottom: 80px
+		.news__item
+			height: 521px
+			width: 31.03%
+			margin-right: 3.44%
+			position: relative
+			&:nth-child(3n)
+				margin-right: 0
+			&-link
+				display: none	
+				width: 100%
+				height: 70px
+				background-color: #393939
+				position: absolute
+				top: -20px
+				left: 0
+				z-index: 2
+				color: white
+				font-size: 24px
+				line-height: 70px
+				text-transform: uppercase
+				text-decoration: none
+				padding-left: 40px
+				letter-spacing: 2px
+				.header-img__link-arrow
+					padding-left: 20px
+			&-img
+				width: 100%	
+				height: 240px
+				position: absolute
+				top: 0
+			&-title
+				margin-top: 282px
+				color: #393939
+				font-size: 24px
+				font-weight: 500
+				margin-bottom: 12px
+			&-date
+				display: inline-block
+				text-decoration: none
+				color: #0e7aff
+				font-size: 16px
+				font-weight: 400
+				margin-bottom: 36px
+			&-text
+				color: #666
+				font-size: 16px
+				font-weight: 400
+				line-height: 32px
+		.news__item:hover 
+			.news__item-link
+				display: inline-block
+			.news__item-img
+				top: 20px
+
+
+/*-------End-News----*/
+
+/*------Contacts----*/	
+
+.contacts
+	background: url("../img/contacts_bg.png") no-repeat
+	background-size: 100% 100%
+	height: 720px
+	background-position: 100% 100%	
+	padding-top: 160px		
+	&__wrap
+		width: 560px
+		height: 380px
+		background-color: white
+		padding-left: 60px
+		float: right
+		box-shadow: 0 0px 60px rgba(0, 0, 0, 0.5)
+	&__title
+		color: #393939
+		font-size: 36px
+		font-weight: 400
+		letter-spacing: 4px
+		margin-top: 54px
+		margin-bottom: 36px
+	&__list		
+		.contacts__item
+			width: 400px
+			margin-bottom: 24px	
+			color: #393939
+			font-size: 18px
+			font-weight: 400
+			line-height: 27px
+			padding-left: 40px
+			position: relative
+			&:last-child
+				margin-bottom: 0
+			.contacts__link
+				text-decoration: none
+				color: #393939
+				font-size: 18px	
+			.contacts__img	
+				position: absolute
+				top: 5px	
+				left: 0
+			.contacts__img-mail
+				top: 10px	
+
+/*-------End-Contacts----*/
+
+/*------Footer----*/	
+
+.footer
+	height: 320px
+	position: relative
+	&__contact
+		float: left
+		margin-right: 100px
+	&__logo
+		display: inline-block
+		margin-top: 37px
+		margin-bottom: 32px
+		padding-left: 5px
+	&__tel
+		display: block
+		text-decoration: none
+		color: #1e3162
+		font-size: 16px
+		font-weight: 400
+		padding-left: 60px
+		margin-bottom: 34px
+	&__form
+		color: #0e7aff
+		font-size: 16px
+		font-weight: 400	
+		position: relative	
+		&-text
+			margin-bottom: 20px
+			padding-left: 60px
+		&-email
+			width: 200px
+			height: 48px
+			background-color: #f9f9f9
+			border: 1px solid #e6e6e6
+			border-radius: 24px
+			padding-left: 60px
+			color: #707070
+			font-size: 14px
+			font-weight: 400
+			line-height: 46px
+			outline: none
+		&-submit
+			width: 41px
+			height: 41px
+			background: url("../img/footer_subm.png") no-repeat
+			border-radius: 50%
+			background-position: 50% 30%
+			border: none
+			outline: none
+			position: absolute
+			left: 5px
+			bottom: 4px
+	&__wrap
+		height: 320px
+		float: left
+		width: 200px
+		&:nth-child(4)
+			margin-left: 60px
+		.footer__title
+			display: inline-block
+			margin-top: 48px
+			margin-bottom: 24px
+			text-decoration: none
+			color: #393939
+			font-size: 16px
+			font-weight: 400
+			letter-spacing: 2px
+			&:hover
+				color: #0e7aff
+		.footer__list
+			.footer__item
+				.footer__link
+					display: block
+					margin-bottom: 15px
+					font-size: 14px
+					text-decoration: none
+					color: #707070
+					&:hover
+						color: #393939
+
+
+@import "media" // Всегда в конце
