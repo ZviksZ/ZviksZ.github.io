@@ -356,6 +356,7 @@ body, h2, h3, p {
       margin-bottom: 22px; }
       .content-news .content-news_item .content-news_item-wrap .content-header {
         margin: 25px 0 6px 0;
+        max-width: 272px;
         padding-top: 0;
         width: 64.67%;
         line-height: 21px; }
@@ -382,6 +383,7 @@ body, h2, h3, p {
         margin-bottom: 5px; }
       .content-news .content-news_item .content-news_item-wrap .content-news_text-last {
         width: 84.67%;
+        max-width: 390px ;
         height: 65px;
         color: #5c5c5c;
         font-size: 10px;
