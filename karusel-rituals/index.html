@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Rituals</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/Logo_Rituals_Outline.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/add.css">
+	<link rel="stylesheet" href="css/add2.css">
+
+	<script src="https://api-maps.yandex.ru/2.1.17/?apikey=<fc9cb32e-ef40-47f6-83db-74e3b1b254e6>&lang=ru_RU" type="text/javascript"></script>
+
+</head>
+
+<body style="visibility: hidden" onload="setTimeout ('document.body.style.visibility = \'visible\'', 0)">
+<!--<body>-->
+<div id="modal_form">
+		<img src="img/popup.jpg" class="css-adaptive">
+
+	</div>
+	<div id="overlay">
+		<span id="modal_close">X</span>
+	</div><!-- Пoдлoжкa -->
+	<!-- Custom HTML -->
+	<div class="top">
+		<div class="container">
+
+			<div class="row d-flex align-items-center justify-content-lg-between">
+
+				<div class="col-xl-3 col-lg-2 col-md-4 col-sm-4 col-5 order-first order-first">
+					<a href="http://www.karusel.ru" target="_blank" class="top__logo-carusel">
+						<img src="img\carusel_logo.png" alt="">
+					</a>
+				</div>
+				<div class="col-xl-6 col-lg-8 col-md-2 col-sm-3 col-2 order-sm-last order-lg-first order-last">
+					<div class="nav_mobile"></div>
+					<ul id="top-nav" class="top-nav revealator-slidedown revealator-delay2">
+						<li>
+							<a href="#conditions">Условия участия</a>
+						</li>
+						<li>
+							<a href="#brand">О бренде</a>
+						</li>
+						<li>
+							<a href="#action">Товары по акции</a>
+						</li>
+						<li>
+							<a href="#shops">Магазины</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xl-3 col-lg-2 col-md-6 col-sm-5 col-5">
+					<a href="" class="top__logo-rituals">
+						<img src="img\Rituals_Logo_Horizontal.png" alt="">
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="main" id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12 offset-xl-0 offset-lg-2 col-lg-3 col-md-4
+				col-sm-4 col-3 offset-md-0 offset-sm-2 offset-3 order-last order-xl-first main__logo-wrap">
+					<a href="" class="main__logo revealator-rotateright">
+						<img src="img/Logo_Rituals_Outline.png" alt="">
+					</a>
+				</div>
+				<div class="col-xl-7 col-lg-7 col-md-8 col-sm-6 col-6 order-first order-xl-last main__title-wrap">
+					<h1 class="main__title revealator-rotateright revealator-delay1">
+						ваш комфорт
+						начинается c деталей
+					</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-7 col-lg-5 col-md-7 col-sm-5 col-6">
+					<p class="main__text revealator-rotateright revealator-delay1">
+						Cоберите всю коллекцию банных
+						принадлежностей RITUALS*
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-12 d-flex justify-content-start flex-md-wrap flex-sm-wrap flex-wrap">
+					<div class="main__sale revealator-rotateright revealator-delay2">
+						СКИДКА до
+						<span class="main__sale-big">75%</span>
+					</div>
+					<p class="main__sale-info revealator-rotateright revealator-delay2">
+						акция проводится <br>
+						с 8 апреля по 23 июня
+					</p>
+					<p class="main__mark revealator-rotateright revealator-delay2">
+						*Ричуалс
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="conditions" id="conditions">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-xl-12">
+					<h2 class="conditions__title revealator-slideright revealator-delay2">
+						УСЛОВИЯ УЧАСТИЯ
+					</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="conditions__slider d-flex justify-content-xl-between
+							justify-content-lg-center col-xl-12 offset-xl-0 col-lg-6 offset-lg-3 col-12 offset-0">
+					<div class="conditions__item revealator-slidedown">
+						<img src="img/conditions_1.png" alt="" class="conditions__item-img conditions__img-1">
+						<h3 class="conditions__item-title">Совершайте покупки</h3>
+						<p class="conditions__item-text">
+							Совершайте покупки товаров <br>
+							в гипермаркетах «Карусель» <br>
+							c 08.04.2019 по 16.06.2019 г.
+						</p>
+					</div>
+					<div class="conditions__item revealator-slidedown revealator-delay1">
+						<img src="img/conditions_2.png" alt="" class="conditions__item-img">
+						<h3 class="conditions__item-title">Собирайте наклейки</h3>
+						<p class="conditions__item-text">
+							Собирайте наклейки <br>
+							за каждые 300 руб. в чеке <br>
+							и вклеивайте в буклет
+						</p>
+					</div>
+					<div class="conditions__item revealator-slidedown revealator-delay2">
+						<img src="img/conditions_3.png" alt="" class="conditions__item-img">
+						<div class="sale">
+							СКИДКА до
+							<span class="sale-big">75%</span>
+						</div>
+						<h3 class="conditions__item-title">Получайте СКИДКУ</h3>
+						<p class="conditions__item-text">
+							Получайте скидку до 75% <br>
+							на акционные товары
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-xl-12 conditions__download">
+					<a href="download/promo.pdf" class="conditions__btn" download>Скачать буклет</a>
+					<a href="download/conditions.pdf" class="conditions__btn" download>Условия Акции</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="brand" id="brand">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-5 col-lg-12 col-md-12 col-12 text-md-center text-sm-left brand__info">
+					<h2 class="brand__title revealator-slideright revealator-delay2">О бренде</h2>
+					<a href="" class="brand__slider-logo hidden">
+						<img src="img/Logo_Rituals_Outline.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-5 offset-xl-0 brand__info col-lg-8
+							offset-lg-2 col-md-10 offset-md-1 col-12 offset-0
+							order-last order-xl-first">
+					<p class="brand__text revealator-slideleft revealator-delay2">
+						Инновационный и элегантный бренд Rituals был создан в 2000 году
+						Рэймондом Клустерменом. Сегодня продукция бренда Rituals доступна
+						во многих странах мира.
+					</p>
+					<p class="brand__text brand__text-gold revealator-slideleft revealator-delay2">
+						Вдохновленные мудростью и древними традициями азиатских культур,
+						Rituals создали обширную коллекцию роскошных, но доступных по цене
+						товаров для дома и тела.
+					</p>
+					<p class="brand__text brand__text-last revealator-slideleft revealator-delay2">
+						Rituals предназначены для требовательных клиентов,
+						которые придерживаются высоких стандартов и заботятся об
+						окружающей среде. Компания использует только природные компоненты.
+						Вся продукция имеет сертификаты европейских лабораторий.
+					</p>
+					<p class="brand__tagline revealator-slideleft revealator-delay2">
+						Бренд Rituals предназначен для всех,
+						кто хочет наслаждаться маленькими радостями жизни.
+					</p>
+				</div>
+				<div class="col-xl-7 d-flex justify-content-xl-end
+							justify-content-center col-12 order-first order-xl-last">
+					<div class="brand__slider">
+						<div class="brand__slider-item">
+							<img src="img/brand_1.png" alt="">
+							<a href="" class="brand__slider-logo">
+								<img src="img/Logo_Rituals_Outline.png" alt="">
+							</a>
+						</div>
+						<div class="brand__slider-item">
+							<img src="img/brand_2.png" alt="">
+							<a href="" class="brand__slider-logo">
+								<img src="img/Logo_Rituals_Outline.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="action" id="action">
+		<div class="container">
+			<h2 class="action__title revealator-slideright revealator-delay2">
+				Товары по акции
+			</h2>
+			<div class="action__wrap d-flex justify-content-lg-between justify-content-center flex-wrap">
+
+				<div class="action__item revealator-slidedown">
+					<div class="action__slides action__slides-1">
+						<div class="action__slides-item">
+							<img src="img/action_1.png" alt="">
+						</div>
+						<div class="action__slides-item">
+							<img src="img/action_2.png" alt="">
+						</div>
+						<div class="action__slides-item">
+							<img src="img/action_3.png" alt="">
+						</div>
+					</div>
+					<div class="action__item-info">
+						<p>Банное полотенце</p>
+						<p>70х140 см</p>
+						<p class="line-through">2 399 РУБ.</p>
+					</div>
+					<div class="action__item-price">
+						<div class="action__item-new">699</div>
+						<span class="action__item-bonus">+ 15 НАКЛЕЕК</span>
+						<div class="sale">
+							СКИДКА
+							<span class="sale-big">70%</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="action__item revealator-slidedown revealator-delay1">
+					<div class="action__slides action__slides-2">
+						<div class="action__slides-item">
+							<img src="img/action_6.png" alt="">
+						</div>
+						<div class="action__slides-item">
+							<img src="img/action_5.png" alt="">
+						</div>
+						<div class="action__slides-item">
+							<img src="img/action_4.png" alt="">
+						</div>
+					</div>
+					<div class="action__item-info">
+						<p>КОМПЛЕКТ ИЗ ТРЕХ ПОЛОТЕНЕЦ</p>
+						<p>30х50 см – 1 шт.</p>
+						<p>50х100 см – 2 шт.</p>
+						<p class="line-through">2 999 РУБ.</p>
+					</div>
+					<div class="action__item-price">
+						<div class="action__item-new">799</div>
+						<span class="action__item-bonus">+ 15 НАКЛЕЕК</span>
+						<div class="sale">
+							СКИДКА
+							<span class="sale-big">73%</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="action__item revealator-slidedown revealator-delay2">
+					<div class="action__slides action__slides-3">
+						<div class="action__slides-item">
+							<img src="img/action_7.png" alt="">
+						</div>
+						<div class="action__slides-item">
+							<img src="img/action_8.png" alt="">
+						</div>
+					</div>
+					<div class="action__item-info">
+						<p>ПЛЕД</p>
+						<p>170х130 см</p>
+						<p class="line-through">3 299 РУБ.</p>
+					</div>
+					<div class="action__item-price">
+						<div class="action__item-new action-new_4">1 499</div>
+						<span class="action__item-bonus">+ 15 НАКЛЕЕК</span>
+						<div class="sale">
+							СКИДКА
+							<span class="sale-big">54%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="action__wrap d-flex justify-content-lg-between justify-content-center flex-wrap">
+
+				<div class="action__item revealator-slidedown">
+					<div class="action__item-single">
+						<img src="img/action_9.png" alt="">
+					</div>
+					<div class="action__item-info action__item-info_single">
+						<p>сумка-шоппер</p>
+						<p>60х38x17 см</p>
+						<p class="line-through">5 499 РУБ.</p>
+					</div>
+					<div class="action__item-price">
+						<div class="action__item-new action-new_4">1 399</div>
+						<span class="action__item-bonus">+ 15 НАКЛЕЕК</span>
+						<div class="sale">
+							СКИДКА
+							<span class="sale-big">74%</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="action__item revealator-slidedown revealator-delay1">
+					<div class="action__item-single">
+						<img src="img/action_10.png" alt="">
+					</div>
+					<div class="action__item-info action__item-info_single">
+						<p>зеркало С LED подсветкой</p>
+						<p>для ванной</p>
+						<p class="line-through">4 699 РУБ.</p>
+					</div>
+					<div class="action__item-price">
+						<div class="action__item-new action-new_4">1 699</div>
+						<span class="action__item-bonus">+ 15 НАКЛЕЕК</span>
+						<div class="sale">
+							СКИДКА
+							<span class="sale-big">63%</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="action__item revealator-slidedown revealator-delay2">
+					<div class="action__item-single">
+						<img src="img/action_11.png" alt="">
+					</div>
+					<div class="action__item-info action__item-info_single">
+						<p>напольные весы</p>
+						<p class="list-item">-электронный анализатор состава тела</p>
+						<p class="list-item list-item_last">-встроенная память на 12 пользователей</p>
+						<p class="line-through">4 299 РУБ.</p>
+					</div>
+					<div class="action__item-price">
+						<div class="action__item-new action-new_4">1 199</div>
+						<span class="action__item-bonus">+ 15 НАКЛЕЕК</span>
+						<div class="sale">
+							СКИДКА
+							<span class="sale-big">72%</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section class="shops" id="shops">
+		<div class="container">
+			<h2 class="shops__title revealator-slideright revealator-delay2">Магазины</h2>
+			<!--<form action="" class="shops__search">-->
+				<!--<input name="" placeholder='Найдите "Карусель" рядом с вами' type="search" id="map__search">-->
+				<!--<button type="submit">Поиск</button>-->
+			<!--</form>-->
+		</div>
+		<div id="map" style="width: 100%; height: 750px"></div>
+	</section>
+
+	<div class="footer">
+		<div class="container">
+			<a href="http://www.karusel.ru" target="_blank" class="footer__logo">
+				<img src="img/footer_logo.png" alt="">
+			</a>
+			<a href="" class="footer__rituals">
+				<img src="img/footer_rituals.png" alt="">
+			</a>
+			<div class="footer__worktime">
+				<a href="tel:88002005665">8-800-200-56-65</a>
+				<p>09:00-21:00</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-info">
+		<div class="container">
+			<p>
+				Акция действует c 08.04.2019 по 23.06.2019 г.
+				включительно. Скидки не суммируются с другими скидками и
+				промопредложениями, действующи­ми и применяемыми в гипермаркетах «Карусель».
+				Количество товара ограничено. Изображение товара может незначительно отличаться от
+				представленного в гипермаркете. Подробности об организаторе акции и условиях ее проведения
+				уточняйте в ГМ «Карусель» и на сайте <a href="http://www.karusel.ru" target="_blank">www.karusel.ru</a>
+			</p>
+		</div>
+	</div>
+
+
+	<script src="js/script.min.js"></script>
+	<script type="text/javascript">
+		Revealator.effects_padding = '-300';
+	</script>
+	<script type="text/javascript">
+
+		function init(){
+
+			var myMap = new ymaps.Map('map', {
+				center: [55.683034, 37.591723],
+				zoom: 10,
+				controls: ['smallMapDefaultSet']
+			});
+
+			var searchControl = new ymaps.control.SearchControl({
+				options: {
+                    size: 'large',
+                    noPopup: 'true',
+					provider: 'yandex#search'
+				}
+			});
+
+			myMap.controls.add(searchControl);
+			searchControl.search('Карусель гипермаркет');
+
+			myMap.behaviors.disable('scrollZoom');
+			// myMap.behaviors.get('drag').disable();
+			// myMap.behaviors.disable('drag');
+			// myMap.behaviors.get('multiTouch').disable();
+            // myMap.behaviors.disable('multiTouch');
+
+		}
+		ymaps.ready(init);
+	</script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(53071441, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/53071441" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</body>
+</html>

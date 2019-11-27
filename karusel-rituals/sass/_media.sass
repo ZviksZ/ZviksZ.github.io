@@ -1,0 +1,692 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .top
+    &__logo-carusel
+      img
+        width: 100%
+    &__logo-rituals
+      img
+        width: 100%
+  .main
+    background: url(../img/main_bg.png) no-repeat
+    background-size: cover
+    background-position: center center
+    z-index: 5
+    &__title
+      font-size: 87px
+      line-height: 83px
+    &__text
+      line-height: 1.1
+      margin-bottom: 0
+    &__logo-wrap
+      text-align: right
+    &__logo
+      margin-top: 35px
+      img
+        display: block
+        width: 140px
+        height: 135px
+    &__sale
+      margin-bottom: 70px
+  .conditions
+    .sale
+      right: calc(50% - 180px)
+    &__slider
+      text-align: center
+      .conditions__item
+        text-align: center
+        img
+          margin: 0 auto
+    .slick-next:before
+      content: '>'
+      font-size: 80px
+      color: #e0c59f
+      top: 50px
+    .slick-prev
+      left: -50px
+      z-index: 555
+    .slick-prev:before
+      content: '<'
+      font-size: 80px
+      color: #e0c59f
+      top: 50px
+  .brand
+    &__slider
+      margin-top: 0
+    &__info
+      padding-right: 15px
+    &__text
+      text-align: justify
+      padding-right: 0
+    &__tagline
+      text-align: justify
+      padding-right: 0
+      margin-bottom: 4rem
+  .action
+    &__item
+      width: 300px
+      &-price
+        padding-top: 20px
+      &-new
+        font-size: 50px
+        padding-left: 30px
+        &:after
+          width: 20px
+          height: 4px
+          background-color: #eb302b
+          position: absolute
+          top: 30px
+          right: -30px
+      &-single
+        img
+          width: 100%
+      &-bonus
+        padding-left: 30px
+    .action-new_4
+      padding-left: 30px
+    .sale
+      width: 70px
+      height: 70px
+      line-height: 33px
+      &-big
+        font-size: 40px
+  .shops
+    &__title
+      margin: 50px auto
+// ≥992px
++media-breakpoint-down(md)
+  .nav_mobile
+    .slicknav_menu
+      display: inline-block
+  .top
+    #top-nav
+      display: none
+  .main
+    background: url(../img/main_bg.png) no-repeat
+    background-size: cover
+    background-position: center center
+    z-index: 5
+    &__logo
+      margin-left: 90px
+      img
+        display: block
+        width: 125px
+        height: 120px
+    &__title
+      font-size: 65px
+      line-height: 65px
+      margin-bottom: 10px
+    &__text
+      font-size: 46px
+      line-height: 1
+    &__sale
+      width: 132px
+      height: 132px
+      font-size: 35px
+      line-height: 58px
+      margin-right: 300px
+      margin-bottom: 10px
+      margin-top: 0
+      &-big
+        font-size: 88px
+    &__sale-info
+      margin-top: 0
+      margin-bottom: 30px
+      line-height: 1.1
+    &__mark
+      margin-top: 55px
+      margin-right: 10px
+  .conditions
+    .slick-next
+      right: 75px
+    .slick-prev
+      left: 50px
+  .brand
+    &__info
+      padding-right: 15px
+    &__text
+      text-align: justify
+      padding-right: 0
+    &__tagline
+      text-align: justify
+      padding-right: 0
+  .action
+    background-position: 0 0
+    background-size: 100% 100%
+    &__title
+      color: black
+    &__item
+      width: 70%
+      height: 800px
+      margin-bottom: 56px
+      &:last-child
+        margin-bottom: 0
+      &-price
+        padding-top: 20px
+      &-new
+        font-size: 90px
+        padding-left: 30px
+        display: block
+        margin-bottom: 18px
+        width: 148px
+        &:after
+          width: 20px
+          height: 8px
+          background-color: #eb302b
+          position: absolute
+          top: 26px
+          right: 10px
+      &-single
+        height: 420px
+        padding-top: 20px
+        img
+          width: 100%
+      &-bonus
+        padding-left: 30px
+    .action-new_4
+      padding-left: 30px
+      &:after
+        right: -30px
+    .sale
+      width: 110px
+      height: 110px
+      line-height: 55px
+      font-size: 40px
+      padding-top: 0
+      bottom: 24px
+      &-big
+        font-size: 75px
+    .action__slides-item
+      height: 400px
+  .footer
+    height: auto
+    .container
+      flex-wrap: wrap
+      justify-content: space-between
+    &__worktime
+      flex-basis: 100%
+      justify-content: center
+      margin-bottom: 30px
+      a
+        margin-right: 0
+      p
+        display: none
+
+
+// ≥768px
++media-breakpoint-down(sm)
+
+  .nav_mobile
+    .slicknav_menu
+      display: inline-block
+    .slicknav_nav
+      width: 360px !important
+      margin-left: -60px
+      a
+        font-size: 38px
+  .top
+    #top-nav
+      display: none
+  .main
+    &__title
+      font-size: 42px
+      font-weight: 400
+      line-height: 44px
+      width: 100% !important
+    &__logo
+      margin-top: 30px
+      margin-left: 44px
+      img
+        display: block
+        width: 105px
+        height: 100px
+    &__text
+      font-size: 35px
+      line-height: 37px
+      width: 100% !important
+    &__sale
+      width: 110px
+      height: 110px
+      line-height: 53px
+      font-size: 30px
+      padding-top: 0
+      border-radius: 30px 0
+      &-big
+        font-size: 75px
+    &__sale-info
+      margin-top: 0
+      font-size: 30px
+      line-height: 32px
+    &__mark
+      margin-top: 28px
+      font-size: 26px
+  .conditions
+    &__btn
+      display: block
+      margin: 0 auto
+      width: 280px
+      height: 70px
+      line-height: 71px
+      &:last-child
+        margin: 30px auto 40px
+  .brand
+    &__title
+      font-size: 60px
+      margin-top: 50px
+      margin-bottom: 50px
+    &__slider
+      max-width: 500px
+    &__info
+      padding-right: 15px
+    &__text
+      text-align: justify
+      padding-right: 0
+    &__tagline
+      text-align: justify
+        padding-right: 0
+    .hidden
+      display: none
+  .conditions
+    &__btn
+      width: 200px
+      height: 50px
+      line-height: 51px
+      font-size: 19px
+  .action
+    background-position: 0 0
+    background-size: 100% 100%
+    padding-top: 50px
+    &__title
+      color: black
+      font-size: 60px
+      margin-bottom: 50px
+    &__item
+      width: 90%
+      height: 800px
+      margin-bottom: 56px
+      &:last-child
+        margin-bottom: 0
+      &-price
+        padding-top: 20px
+      &-new
+        font-size: 90px
+        padding-left: 30px
+        width: 148px
+        &:after
+          width: 20px
+          height: 8px
+          background-color: #eb302b
+          position: absolute
+          top: 26px
+          right: 10px
+      &-single
+        height: 420px
+        padding-top: 20px
+        img
+          width: 100%
+      &-bonus
+        padding-left: 30px
+    .action-new_4
+      padding-left: 30px
+      &:after
+        right: -30px
+    .sale
+      width: 110px
+      height: 110px
+      line-height: 55px
+      font-size: 40px
+      padding-top: 0
+      bottom: 24px
+      &-big
+        font-size: 75px
+    .action__slides-item
+      height: 400px
+  .shops
+    &__title
+      font-size: 60px
+      margin: 40px auto
+  .footer
+    height: auto
+    .container
+      flex-wrap: wrap
+      justify-content: space-between
+    &__worktime
+      flex-basis: 100%
+      justify-content: center
+      margin-bottom: 30px
+      a
+        margin-right: 0
+      p
+        display: none
+
+
+
+// ≥576px
++media-breakpoint-down(xs)
+
+  #map
+    height: 500px !important
+  .nav_mobile
+    .slicknav_menu
+      display: inline-block
+    .slicknav_nav
+      width: 290px !important
+      margin-left: 10px
+      a
+        font-size: 38px
+  .top
+    #top-nav
+      display: none
+    &__logo-carusel
+      padding: 20px 0px
+  .main
+    &__title
+      font-size: 26px
+      font-weight: 400
+      line-height: 26px
+      margin-bottom: 6px
+      margin-top: 5px
+      width: 50% !important
+    &__logo-wrap
+      text-align: right
+    &__logo
+      margin-top: 9px
+      margin-left: 0
+      margin-right: 5px
+      img
+        display: block
+        width: 57px
+        height: 50px
+    &__text
+      font-size: 17px
+      line-height: 20px
+      margin-bottom: 8px
+      width: 55% !important
+    &__sale
+      position: absolute
+      width: 72px
+      height: 71px
+      line-height: 34px
+      font-size: 20px
+      padding-top: 0px
+      border-radius: 20px 0
+      margin-right: 0
+      margin-top: 0
+      &-big
+        font-size: 48px
+    &__sale-info
+      margin-top: 75px
+      font-size: 16px
+      line-height: 20px
+      margin-bottom: 15px
+    &__mark
+      margin-top: 96px
+      font-size: 14px
+      margin-bottom: 0
+  .conditions
+    &__slider
+      padding: 0
+    &__title
+      font-size: 40px
+      margin-top: 20px
+      margin-bottom: 0
+    &__btn
+      display: block
+      margin: 0 auto
+      width: 200px
+      height: 50px
+      line-height: 51px
+      font-size: 17px
+      &:last-child
+        margin: 30px auto 40px
+    &__item
+      margin-bottom: 60px
+      &:last-child
+        margin-bottom: 30px
+      &-title
+        font-size: 32px
+        line-height: 45px
+      &-text
+        font-size: 18px
+        margin-bottom: 0
+      img
+        margin: 0 auto
+      .sale
+        width: 81px
+        height: 81px
+        line-height: 42px
+        font-size: 26px
+        padding-top: 0
+        bottom: 50px
+        right: 100px
+        border-radius: 20px 0
+        &-big
+          font-size: 60px
+  .brand
+    &__info
+      padding-right: 15px
+    &__text
+      font-size: 19px
+      &-last
+        margin-bottom: 20px
+    &__tagline
+      font-size: 28px
+    &__title
+      display: inline-block
+      font-size: 40px
+      font-weight: 400
+      line-height: 57px
+      margin-top: 25px
+      margin-bottom: 22px
+    &__slider
+      min-width: 310px
+      max-width: 330px
+      height: 440px
+      margin-bottom: 45px
+      &-item
+        width: 100%
+        height: 440px
+      img
+        width: 100%
+        height: 100%
+      &-logo
+        display: none
+    .brand__slider-logo.hidden
+      display: inline-block
+      width: 55px
+      height: 50px
+      position: static
+      float: right
+      margin-top: 30px
+      img
+        display: block
+        width: 55px
+        height: 50px
+  .action
+    background-position: 0 0
+    background-size: 100% 100%
+    padding-top: 20px
+    &__title
+      color: black
+      font-size: 40px
+      margin-bottom: 30px
+    &__slides
+      height: 200px
+      .slick-dots
+        bottom: -42px
+    &__item
+      width: 100%
+      max-width: 310px
+      height: 570px
+      margin-bottom: 56px
+      &:last-child
+        margin-bottom: 0
+      &-info
+        margin-top: 100px
+        p
+          font-size: 30px
+          line-height: 18px
+      &-price
+        padding-top: 20px
+      &-new
+        font-size: 60px
+        padding-left: 30px
+        width: 148px
+        margin-bottom: 0
+        &:after
+          width: 20px
+          height: 4px
+          background-color: #eb302b
+          position: absolute
+          top: 30px
+          right: 40px
+      &-single
+        height: 250px
+        padding-top: 20px
+        img
+          width: 100%
+      &-bonus
+        padding-left: 30px
+    .action__item-info_single
+      margin-top: 50px
+    .action-new_4
+      padding-left: 30px
+      &:after
+        right: 10px
+    .sale
+      width: 70px
+      height: 70px
+      line-height: 37px
+      font-size: 26px
+      padding-top: 0
+      bottom: 50px
+      right: 30px
+      border-radius: 20px 0
+      &-big
+        font-size: 50px
+    .action__slides-item
+      height: 450px
+      padding-top: 0
+      img
+        width: 100%
+  .shops
+    &__title
+      font-size: 40px
+      margin: 30px auto
+  .footer
+    height: auto
+    .container
+      flex-wrap: wrap
+      justify-content: space-between
+    &__logo
+      flex-basis: 40%
+      margin: 15px 5%
+      img
+        width: 100%
+    &__rituals
+      flex-basis: 40%
+      margin: 15px 5%
+      img
+        width: 100%
+    &__worktime
+      flex-basis: 100%
+      justify-content: center
+      margin-bottom: 20px
+      a
+        font-size: 16px
+        font-weight: 700
+        margin-right: 0
+      p
+        display: none
+  .footer-info
+    .container
+      p
+        font-size: 12px
+        font-weight: 400
+        margin-bottom: 15px
+
+@media (max-width: 1199px)
+  .revealator-slideright,
+  .revealator-slideleft,
+  .revealator-rotateright,
+  .revealator-slidedown,
+  .revealator-delay2,
+  .revealator-delay1
+    -o-transition-property: none !important
+    -moz-transition-property: none !important
+    -ms-transition-property: none !important
+    -webkit-transition-property: none !important
+    transition-property: none !important
+    /*CSS transforms*/
+    -o-transform: none !important
+    -moz-transform: none !important
+    -ms-transform: none !important
+    -webkit-transform: none !important
+    transform: none !important
+    /*CSS animations*/
+    -webkit-animation: none !important
+    -moz-animation: none !important
+    -o-animation: none !important
+    -ms-animation: none !important
+    animation: none !important
+
+
+@media (max-width: 470px)
+
+  .main
+    &__title
+      width: 65% !important
+    &__text
+      width: 65% !important
+    &__sale
+      position: absolute
+      width: 52px
+      height: 51px
+      line-height: 27px
+      font-size: 15px
+      padding-top: 0px
+      border-radius: 20px 0
+      margin-right: 0
+      margin-top: 0
+      &-big
+        font-size: 34px
+    &__sale-info
+      margin-top: 55px
+      font-size: 16px
+      line-height: 20px
+    &__mark
+      margin-top: 76px
+      font-size: 14px
+  .conditions
+    &__item
+      img
+        width: 70%
+      .sale
+        top: 20px
+        right: 50px
+    .slick-next
+      right: 25px
+      &:before
+        font-size: 60px
+    .slick-prev
+      left: 11px
+      &:before
+        font-size: 60px
+
+
+
+@media (max-width: 410px)
+
+  .main
+    &__title
+      width: 100% !important
+    &__text
+      width: 100% !important
+    &__logo
+      margin-right: 0
+      margin-left: -17px

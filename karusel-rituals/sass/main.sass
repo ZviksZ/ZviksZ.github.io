@@ -1,0 +1,641 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+@keyframes rotate
+	0%
+		transform: rotate(0deg) translate3d(0, 0, 0)
+	25%
+		transform: rotate(3deg) translate3d(0, 0, 0)
+	50%
+		transform: rotate(-3deg) translate3d(0, 0, 0)
+	75%
+		transform: rotate(1deg) translate3d(0, 0, 0)
+	100%
+		transform: rotate(0deg) translate3d(0, 0, 0)
+
+@keyframes storm
+	0%
+		transform: translate3d( 0, 0, 0) translateZ(0)
+	25%
+		transform: translate3d( 4px, 0, 0) translateZ(0)
+	50%
+		transform: translate3d( -3px, 0, 0) translateZ(0)
+	75%
+		transform: translate3d( 2px, 0, 0) translateZ(0)
+	100%
+		transform: translate3d( 0, 0, 0) translateZ(0)
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+.nav_mobile
+	position: relative
+	text-align: center
+	.slicknav_menu
+		display: none
+		padding: 0
+		position: absolute
+		top: -8px
+		right: 0 !important
+		z-index: 444
+		background: transparent
+		width: 300px
+		.slicknav_btn
+			margin: 0
+			background-color: transparent
+			margin-top: -15px
+			float: right
+		.slicknav_menutxt
+			display: none
+		.slicknav_icon
+			margin: 0
+			width: 38px
+			height: 38px
+			border: 1px solid #827568
+			border-radius: 3px
+			padding-left: 5px
+			.slicknav_icon-bar
+				width: 26px
+				height: 2px
+				background-color: #827568
+				margin-top: 0.312em;
+				transition: all 0.5s linear
+				&:first-child
+					margin-top: 10px
+		.slicknav_nav
+			width: 300px
+			li
+				background: #353130
+				margin-bottom: 1px
+				border-radius: 7px
+			a
+				font-size: 32px
+				margin: 0
+				outline: none
+		.slicknav_open
+			.slicknav_icon
+				.slicknav_icon-bar
+					position: absolute
+					top: 19px
+					&:first-child
+						display: none
+					&:nth-child(2)
+						transform: rotate(45deg)
+					&:nth-child(3)
+						transform: rotate(-45deg)
+
+
+
+.sale
+	width: 101px
+	height: 101px
+	padding-top: 5px
+	background-image: linear-gradient(to top, #eb302b 0%, #eb302b 100%)
+	border-radius: 30px 0px
+	color: #fefefe
+	font-family: CarouselRegular
+	font-weight: 400
+	line-height: 46px
+	text-transform: uppercase
+	font-size: 22px
+	line-height: 44px
+	text-transform: uppercase
+	text-align: center
+	&-big
+		display: inline-block
+		margin-top: -10px
+		font-size: 54px
+
+
+.hidden
+	display: none
+
+
+
+
+/*-----------------TOP-NAV--------------*/
+
+.top
+	&-nav
+		display: flex
+		justify-content: center
+		padding-left: 0
+		margin-bottom: 0
+		li
+			list-style: none
+			margin-right: 35px
+			&:last-child
+				margin-right: 0
+			a
+				color: #807468
+				font-size: 24px
+				text-decoration: none
+				&:hover
+					text-decoration: underline
+	&__logo-carusel
+		padding: 38px 0
+		display: block
+		outline: none
+		transition: 0.5s ease
+		&:hover
+			-webkit-transform: scale(1.1)
+			-ms-transform: scale(1.1)
+			transform: scale(1.1)
+	&__logo-rituals
+		display: block
+		transition: 0.5s ease
+		&:hover
+			-webkit-transform: scale(1.1)
+			-ms-transform: scale(1.1)
+			transform: scale(1.1)
+
+/*----------------END-TOP-NAV--------------*/
+
+/*-----------------MAIN--------------*/
+
+.main
+	background: url(../img/main_bg.png) no-repeat
+	background-size: 100% 100.3%
+	z-index: 5
+	&__logo
+		display: inline-block
+		margin-top: 80px
+		&:hover
+			transform: rotate(360deg)
+	&__title
+		margin-top: 22px
+		margin-bottom: 22px
+		color: black
+		font-size: 90px
+		font-weight: 400
+		line-height: 95px
+		text-transform: uppercase
+	&__text
+		color: #827568
+		font-size: 54px
+		font-weight: 400
+		line-height: 1.2
+	&__sale
+		width: 200px
+		height: 199px
+		margin: 20px 40px 100px 0
+		padding-top: 5px
+		background-color: #eb302b
+		border-radius: 50px 0px
+		color: #fefefe
+		font-weight: 400
+		line-height: 84px
+		text-transform: uppercase
+		font-size: 48px
+		text-align: center
+		&-big
+			display: inline-block
+			margin-top: -7px
+			font-size: 119px
+	&__sale-info
+		margin-top: 50px
+		margin-right: auto
+		color: black
+		font-size: 46px
+		font-weight: 400
+		text-transform: uppercase
+		line-height: 1.3
+	&__mark
+		margin-top: 147px
+		color: black
+		font-size: 32px
+		font-weight: 400
+		text-transform: uppercase
+
+/*----------------END-MAIN--------------*/
+
+/*-----------------CONDITIONS--------------*/
+
+.conditions
+	background: url(../img/conditions_bg.png) no-repeat
+	background-position: 0 0
+	background-size: 100% 100%
+	&__title
+		margin-top: 92px
+		margin-bottom: 35px
+		color: white
+		font-size: 76px
+		font-weight: 400
+		line-height: 84px
+		text-transform: uppercase
+		text-align: center
+	&__item
+		text-align: center
+		margin-bottom: 56px
+		position: relative
+		transition: 0.5s ease
+		&:hover
+			-webkit-transform: scale(1.1)
+			-ms-transform: scale(1.1)
+			transform: scale(1.1)
+		.sale
+			position: absolute
+			top: 70px
+			right: 44px
+		&-title
+			color: #e0c59f
+			font-size: 46px
+			font-weight: 400
+			line-height: 84px
+			text-transform: uppercase
+		&-text
+			color: white
+			font-family: $minor-font
+			font-size: 21px
+			font-weight: 400
+	&__download
+		text-align: center
+	&__btn
+		display: inline-block
+		width: 245px
+		height: 64px
+		margin-bottom: 76px
+		margin-right: 40px
+		background-color: #eb302b
+		border: 1px solid #eb302b
+		border-radius: 32px
+		text-decoration: none
+		line-height: 65px
+		color: white
+		font-family: $minor-font
+		font-size: 21px
+		font-weight: 700
+		text-transform: uppercase
+		transition: 0.5s ease
+		&:last-child
+			margin-right: 0
+		&:hover
+			animation: rotate 0.7s ease-in-out both
+			animation-delay: 0.06s
+			background: transparent
+			border: 1px solid #eb302b
+			border-radius: 32px
+			text-decoration: none
+			color: white
+
+/*----------------END-CONDITIONS--------------*/
+
+/*-----------------BRAND--------------*/
+
+.brand
+	background: #353130
+	&__info
+		padding-right: 40px
+	&__title
+		color: #fffefe
+		font-size: 76px
+		font-weight: 400
+		line-height: 60px
+		text-transform: uppercase
+		margin-top: 108px
+		margin-bottom: 68px
+	&__text
+		font-family: $minor-font
+		font-size: 21px
+		font-weight: 400
+		color: white
+		margin-bottom: 22px
+		line-height: 1.3
+		&-gold
+			color: #e0c59f
+	&__text-last
+		margin-bottom: 45px
+	&__tagline
+		color: white
+		font-size: 40px
+		font-weight: 400
+		line-height: 1.2
+	&__slider
+		max-width: 610px
+		margin-top: -236px
+		margin-right: 0
+		margin-bottom: 84px
+		height: 912px
+		&-item
+			outline: none
+			position: relative
+			height: 912px
+			img
+				width: 100%
+				height: 100%
+		&-logo
+			position: absolute
+			bottom: 30px
+			right: 28px
+			width: 136px
+			height: 122px
+
+
+/*----------------END-BRAND--------------*/
+
+/*-----------------ACTION--------------*/
+
+.action
+	background: url(../img/action_bg.png) no-repeat #353130
+	background-position: 0 254px
+	padding-top: 42px
+	&__wrap
+		margin-bottom: 56px
+		&:last-child
+			margin-bottom: 0
+			padding-bottom: 94px
+	&__title
+		color: white
+		font-size: 76px
+		font-weight: 400
+		line-height: 60px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 86px
+
+	&__item
+		width: 340px
+		height: 688px
+		background-color: white
+		position: relative
+		&-info
+			margin-top: 70px
+			text-align: center
+			p
+				color: black
+				font-size: 33px
+				font-weight: 400
+				line-height: 20px
+				text-transform: uppercase
+			.line-through
+				text-decoration: line-through
+			.list-item
+				color: black
+				font-weight: 400
+				text-transform: uppercase
+				font-size: 21px
+				line-height: 21px
+				margin-bottom: 8px
+			.list-item_last
+				margin-bottom: 12px
+		&-info_single
+			margin-top: 40px
+		&-price
+			position: absolute
+			bottom: 0
+			width: 100%
+			height: 146px
+			.sale
+				position: absolute
+				width: 100px
+				height: 97px
+				border-radius: 27px 2px
+				bottom: 53px
+				right: 35px
+		&-new
+			display: inline-block
+			color: #eb302b
+			font-weight: 400
+			line-height: 50px
+			text-transform: uppercase
+			font-size: 76px
+			position: relative
+			padding-left: 60px
+			margin-right: 200px
+			&:after
+				content: ""
+				display: block
+				width: 20px
+				height: 8px
+				background-color: #eb302b
+				position: absolute
+				top: 26px
+				right: -30px
+		&-single
+			height: 331px
+			padding-top: 46px
+		.action-new_4
+			padding-left: 41px
+		&-bonus
+			width: 100%
+			color: #eb302b
+			font-weight: 400
+			line-height: 36px
+			text-transform: uppercase
+			font-size: 33px
+			padding-left: 50px
+	&__slides
+		&-item
+			width: 100%
+			height: 301px
+			outline: none
+			padding-top: 46px
+			img
+				width: 100%
+				height: auto
+		.slick-dots
+			li
+				margin-right: 30px
+				&:last-child
+					margin-right: 0
+			button
+				width: 19px
+				height: 19px
+				border-radius: 50%
+				&:before
+					content: ""
+	.action__slides-1
+		#slick-slide-control10
+			background-color: #f26522
+		li.slick-active #slick-slide-control10
+			box-shadow: 0 4px 13px rgba(242, 101, 34, 0.71)
+		#slick-slide-control11
+			background-color: #827568
+		li.slick-active #slick-slide-control11
+			box-shadow: 0 4px 13px rgba(130, 117, 104, 0.71)
+		#slick-slide-control12
+			background-color: #b7b7b7
+		li.slick-active #slick-slide-control12
+			box-shadow: 0 4px 13px rgba(136, 136, 136, 0.71)
+	.action__slides-2
+		#slick-slide-control20
+			background-color: #f26522
+		li.slick-active #slick-slide-control20
+			box-shadow: 0 4px 13px rgba(242, 101, 34, 0.71)
+		#slick-slide-control21
+			background-color: #827568
+		li.slick-active #slick-slide-control21
+			box-shadow: 0 4px 13px rgba(130, 117, 104, 0.71)
+		#slick-slide-control22
+			background-color: #b7b7b7
+		li.slick-active #slick-slide-control22
+			box-shadow: 0 4px 13px rgba(136, 136, 136, 0.71)
+	.action__slides-3
+		#slick-slide-control30
+			background-color: #3c2927
+		li.slick-active #slick-slide-control30
+			box-shadow: 0 4px 13px rgba(60, 41, 39, 0.71)
+		#slick-slide-control31
+			background-color: #e4cab6
+		li.slick-active #slick-slide-control31
+			box-shadow: 0 4px 13px rgba(199, 166, 141, 0.71)
+
+
+
+
+/*----------------END-ACTION--------------*/
+
+/*-----------------SHOPS--------------*/
+
+.shops
+	background: #353130
+	.container
+		display: flex
+		justify-content: space-between
+	&__title
+		color: white
+		font-size: 76px
+		font-weight: 400
+		line-height: 84px
+		text-transform: uppercase
+		margin: 70px 0 66px
+	&__search
+		margin-left: auto
+		margin-top: 90px
+		input
+			background-color: transparent
+			border: 0
+			border-bottom: 1px solid white
+			width: 340px
+			color: white
+			font-family: $minor-font
+			font-size: 18px
+			font-weight: 400
+			line-height: 38px
+			letter-spacing: 1px
+		::-webkit-input-placeholder
+			color: #fff
+		::-moz-placeholder
+			color: #fff
+		:-moz-placeholder
+			color: #fff
+		:-ms-input-placeholder
+			color: #fff
+
+.ymaps-2-1-73-places-pane .ymaps-2-1-73-svg-icon
+	background: url(../img/map_green.png) no-repeat !important
+	width: 44px !important
+	height: 58px !important
+	left: -22px !important
+	top: -28px !important
+.ymaps-2-1-73-places-pane .ymaps-2-1-73-events-pane
+	width: 44px !important
+	height: 58px !important
+.ymaps-map
+	-ms-touch-action: auto !important
+	touch-action: auto !important
+
+
+/*----------------END-SHOPS--------------*/
+
+/*--------------FOOTER-----------------*/
+
+.footer
+	background-color: #00764e
+	height: 100px
+	.container
+		display: flex
+		align-items: center
+	&__logo
+		margin: 34px 44px 32px 0
+		transition: 0.5s ease
+		&:hover
+			-webkit-transform: scale(1.1)
+			-ms-transform: scale(1.1)
+			transform: scale(1.1)
+	&__rituals
+		transition: 0.5s ease
+		&:hover
+			-webkit-transform: scale(1.1)
+			-ms-transform: scale(1.1)
+			transform: scale(1.1)
+	&__worktime
+		margin-left: auto
+		display: flex
+		align-items: baseline
+		a
+			display: inline-block
+			color: white
+			font-family: $minor-font
+			font-size: 34px
+			font-weight: 700
+			text-decoration: none
+			transition: all 0.5s ease
+			margin-right: 22px
+			&:hover
+				text-decoration: underline
+		p
+			color: white
+			font-family: $minor-font
+			font-size: 18px
+			font-weight: 400
+			margin-bottom: 0
+
+/*----------------END-FOOTER--------------*/
+
+/*--------------FOOTER-INFO----------------*/
+
+.footer-info
+	.container
+		p
+			padding-top: 20px
+			color: black
+			font-family: $minor-font
+			font-size: 16px
+			font-weight: 400
+			text-align: center
+			margin-bottom: 30px
+			a
+				display: inline-block
+				text-decoration: none
+				color: black
+				font-family: $minor-font
+
+
+/*-------------END-FOOTER-INFO----------------*/
+
+
+@import "media" // Always at the end
